@@ -1,0 +1,58 @@
+     
+    
+        
+        
+//
+//        let liToSort = document.querySelectorAll(".li");
+//
+//        if (liToSort.length == 0 || liToSort.length == 1) {
+//            console.log("I don't have li")
+//        } else {
+//
+//            let listEvents = document.querySelectorAll("#addDate li");
+//            let newArray = [];
+//
+//            for (let i = 0; i < listEvents.length; i++) {
+//                newArray.push(JSON.stringify(listEvents[i]));
+//            }
+//
+//
+//            console.log(newArray);
+//            
+//            
+//            let ul = document.querySelector("#addDate");
+//
+//            ul.innerHTML = "";
+//            
+//            newArray.reverse();//TRY this one first
+//
+//            for (let i = 0; i < newArray.length; i++) {
+//
+//                let textNode = document.createTextNode(newArray[i]);
+//                let liNode = document.createElement("li");
+//                
+//                
+//                
+//                
+//                liNode.appendChild(textNode);
+//                ul.appendChild(liNode);
+//            }
+//            
+//        }
+            
+            
+            
+            
+            
+            
+            
+            
+            //let liString =JSON.stringify(liToSort);
+            //console.log(liString);
+//            let liArray = liToSort.map(function(item){ return [item];});
+//            console.log(liArray);
+//            
+//            liArray.sort();
+          //liString.sort(function(a, b){return a.id-b.id}) 
+      //  }
+       
