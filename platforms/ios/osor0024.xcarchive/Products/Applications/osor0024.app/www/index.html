@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-eval' ws: ;
+         style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/;
+         img-src 'self' data: content: ;
+         font-src 'self' data: https://fonts.gstatic.com/ https://fonts.googleapis.com/;">
+
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    
+    <title>Remembrall</title>
+</head>
+
+<body>
+   <header>
+       <h1>Remember</h1>
+   </header>
+    <div class="home">
+        
+        <div id="wraper"><button id="theAddBtn">
+            <i class="material-icons" id="rew-btn">add</i>Add Event</button> </div>
+        
+        <ul id="addDate">
+
+        </ul>
+
+        
+
+    </div>
+
+    <div class="modal off ">
+
+
+        <i class="material-icons" id="backBtn">arrow_back_ios</i>
+
+        
+
+        <form name="input-form" action="#" method="post">
+            <div class="form-box eventName">
+                <label for="eventName">New event</label>
+                <input type="text" placeholder=" New event" id="eventInput"/>
+            </div>
+            <div class="form-box set-date">
+                <label for="set-date">Set date</label>
+                <input type="date" placeholder="yyyy-mm-dd" id="set-date" />
+            </div>
+            </form>
+            
+
+     <button id="saveBtn">Save</button>
+      <button id="cancelBtn">Cancel</button>
+       
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>
